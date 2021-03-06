@@ -24,7 +24,7 @@ class Login(models.Model):
 
 
 class Customer(models.Model):
-    transaction_id = models.AutoField
+    transaction_id = models.AutoField 
     customer_id = models.ForeignKey(Login, on_delete=models.CASCADE)
     transdate = models.DateField(auto_now_add=True)
     cfname = models.CharField(max_length=100)
@@ -39,7 +39,6 @@ class Customer(models.Model):
 
     def __str__(self):
         return str(self.customer_id)
-
-          
+   
 
 

@@ -5,6 +5,7 @@ from .models import Login, Customer
 class customerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Customer
-        fields = ['transactionID', 'transdate', 'cfname', 'clname', 'country', 'ccity', 'ptype', 'product', 'qty', 'amount']
+        fields = '__all__'
+        #fields = ['transaction_id', 'transdate', 'cfname', 'clname', 'country', 'ccity', 'ptype', 'product', 'qty', 'amount']
 
 
